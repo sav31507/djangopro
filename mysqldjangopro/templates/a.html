@@ -1,0 +1,69 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>Decent Signup form Responsive Widget Template : W3Layouts</title>
+
+	<!-- Meta tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Style -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all" />
+</head>
+
+<body>
+	<!-- signup form -->
+	<section class="w3l-signup-form">
+		<div id="form-section">
+			<div class="wrapper">
+
+				<!-- logo -->
+				<div class="logo">
+					<a class="brand-logo" href="index.html">Decent signup form</a>
+				</div>
+				<!-- //logo -->
+
+				<!-- form -->
+				<div class="login-form">
+					<form action="/" method="post">
+
+						{% csrf_token %}
+
+						<div class="form-fields d-grid">
+							<input type="text" name="name" placeholder="Username" required="required" />
+							<input type="email" name="email" placeholder="Email" required="required" />
+							<input type="password" name="password" placeholder="Password" required="required" />
+							<input type="password" name="cpassword" placeholder="Confirm Password" required="required" />
+						</div>
+						<button type="submit">Signup</button>
+					</form>
+				</div>
+				<div class="new-signup">
+					<p class="signup">Already have an account? <a href="login" class="signuplink">Login Now</a></p>
+				</div>
+				<!-- //form -->
+
+				<!-- copyright -->
+				<div class="copy-right">
+					<p>&copy; 2020 Decent Signup Form. All rights reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3Layouts</a></p>
+				</div>
+				<!-- //copyright -->
+
+			</div>
+		</div>
+	</section>
+	<!-- /signup form -->
+</body>
+
+</html>
